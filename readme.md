@@ -14,8 +14,6 @@
     --style-components
     --@types/style-components
     --styled-icons
-    
-  
   <a href="https://nodejs.org/es/" target="_blank" rel="node" >
   <img src="https://nodejs.org/static/images/logo.svg" alt="node" width="50" height="50"/>
    - Style components</a>
