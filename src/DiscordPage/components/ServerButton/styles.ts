@@ -9,8 +9,8 @@ export const ButtonSB = styled.button<Props>`
   width: 48px;
   height: 48px;
   margin-bottom: 8px;
-  border-radius: 50%;
-  background-color: ${(props) => props.isHome ? 'var(--tutiPrimary)' : 'var(--primary)'};
+  border-radius: ${(props) => (props.hasNotifications ? '16px' : '50px')};
+  background-color: ${(props) => props.isHome ? 'var(--tutiPrimary)' : (props.hasNotifications ? 'var(--discord)' : 'var(--primary)')};
   position: relative;
   cursor: pointer;
   > img {
@@ -24,7 +24,7 @@ export const ButtonSB = styled.button<Props>`
     left: -17px;
     top: calc(50% - 4.5px);
     background-color: var(--white);
-    border-radius: 50%;
+    border-radius: 50px;
     content: '';
     display: ${(props) => (props.hasNotifications ? 'inline' : 'none')};
   }
