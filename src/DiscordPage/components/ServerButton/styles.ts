@@ -14,8 +14,8 @@ export const ButtonSB = styled.button<Props>`
   position: relative;
   cursor: pointer;
   > img {
-    width: 44px;
-    height: 44px;
+    width: 30px;
+    height: 30px;
   }
   &::before {
     width: 9px;

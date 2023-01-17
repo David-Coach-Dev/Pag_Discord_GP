@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { IconsData } from "@/DiscordPage";
 import {
   ContainerSL,
   SeparatorSL,
@@ -6,14 +7,32 @@ import {
 } from "@/DiscordPage";
 
 export const ServerList: FC = () => {
+  let button;
   return (
     <ContainerSL>
-      <ServerButton isHome />
-      <SeparatorSL />
-      <ServerButton hasNotifications />
-      <ServerButton mentions={3} />
-      <ServerButton />
-      <ServerButton mentions={10} />
+      {button = IconsData.map((icon) => {
+        return (
+          <>
+            {icon.key == "0" ? (
+              <>
+                <ServerButton
+                  isHome
+                  img={icon.icon}
+                  description={icon.name}
+                  link={icon.link}
+                />
+                <SeparatorSL />
+              </>
+            ) : (
+                <ServerButton hasNotifications={icon.name=="Discord"? true: false}
+                img={icon.icon}
+                description={icon.name}
+                link={icon.link}
+              />
+            )}
+          </>
+        );
+      })}
     </ContainerSL>
   );
 };

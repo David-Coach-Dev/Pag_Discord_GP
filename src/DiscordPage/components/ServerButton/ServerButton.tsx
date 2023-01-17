@@ -1,17 +1,23 @@
+import { ButtonSB, IconsData } from "@/DiscordPage";
 import logo from "@/discordPage/assets/img/tuti.gif";
-import { ButtonSB } from "@/DiscordPage";
 import { FC } from "react";
 export interface Props {
   selected?: boolean;
   isHome?: boolean;
   hasNotifications?: boolean;
   mentions?: number;
+  img?: string;
+  description?: string;
+  link?: string;
 }
 export const ServerButton: FC<Props> = ({
   selected,
   isHome,
   hasNotifications,
   mentions,
+  img,
+  description,
+  link
 }) => {
   return (
     <ButtonSB
@@ -19,8 +25,14 @@ export const ServerButton: FC<Props> = ({
       hasNotifications={hasNotifications}
       mentions={mentions}
       className={selected ? "active" : ""}
+      onClick={() => {
+        if (link) {
+          //window.location.href = `${link}`;
+          window.open(link, "_blank");
+        }
+      }}
     >
-      {isHome && <img src={logo} alt="Logo" />}
+      <img src={img} alt={description} />
     </ButtonSB>
-  );
-};
+  );};
+
