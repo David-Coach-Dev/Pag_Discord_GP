@@ -1,2 +1,2 @@
-export * from './GentlemamProgranigDiscrod';
+export * from './GentlemanProgrammingDiscord';
 export * from './IconsData';

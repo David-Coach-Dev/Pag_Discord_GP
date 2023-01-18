@@ -1,5 +1,4 @@
-import { ButtonSB, IconsData } from "@/DiscordPage";
-import logo from "@/discordPage/assets/img/tuti.gif";
+import { ButtonSB } from "@/DiscordPage";
 import { FC } from "react";
 export interface Props {
   selected?: boolean;
