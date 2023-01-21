@@ -26,15 +26,16 @@ export default createGlobalStyle`
     --gray: #8a8c90;
     --chat-input: rgb(64,68,75);
     --symbol: #74777a;
- 
+    
+    --live: #43b581;
     --notification: #f84a4b;
+    --notificationDc: #dc274345;
     --discord: #6e86d6;
     --mention-detail: #f9a839;
     --mention-message: #413f3f;
  
     --link: #5d80d6;
  
-    --rocketseat: #6633cc;
     --tutiPrimary:  #000000;
     --tutiSecondary:  #EA1889;
   }

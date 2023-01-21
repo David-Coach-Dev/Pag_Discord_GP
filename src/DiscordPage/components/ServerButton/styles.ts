@@ -9,8 +9,8 @@ export const ButtonSB = styled.button<Props>`
   width: 48px;
   height: 48px;
   margin-bottom: 8px;
-  border-radius: ${(props) => (props.hasNotifications ? '16px' : '50px')};
-  background-color: ${(props) => props.isHome ? 'var(--tutiPrimary)' : (props.hasNotifications ? 'var(--discord)' : 'var(--primary)')};
+  border-radius: ${props => props.hasNotifications ? '16px' : '50px'};
+  background-color: ${props => props.selected ? 'var(--discord)' : 'var(--primary)'};
   position: relative;
   cursor: pointer;
   > img {
@@ -26,27 +26,52 @@ export const ButtonSB = styled.button<Props>`
     background-color: var(--white);
     border-radius: 50px;
     content: '';
-    display: ${(props) => (props.hasNotifications ? 'inline' : 'none')};
+    display: ${props => props.hasNotifications ? 'inline' : 'none'};
   }
   &::after {
-    background-color: var(--notification);
-    width: auto;
-    height: 16px;
-    padding: 0 4px;
-    position: absolute;
-    bottom: -4px;
-    right: -4px;
-    border-radius: 12px;
-    border: 4px solid var(--quaternary);
-    text-align: right;
-    font-size: 13px;
-    font-weight: bold;
-    color: var(--white);
-    content: '${(props) => props.mentions && props.mentions}';
-    display: ${(props) => (props.mentions && props.mentions > 0 ? 'inline' : 'none')};
+    ${
+      props => props.isLive ?
+      `
+        background-color: var(--live);
+        width: auto;
+        height: 16px;
+        padding: 0 4px;
+        position: absolute;
+        top: -6px;
+        right: -14px;
+        border-radius: 12px;
+        border: 4px solid var(--quaternary);
+        text-align: right;
+        font-size: 12px;
+        font-weight: bold;
+        color: var(--white);
+        content: 'Live';
+        display: ${props.isLive && props.isLive ? 'inline' : 'none'};
+      ` : ''
+    }
+      ${props => props.mentions && props.mentions > 0 ?
+      `
+        background-color: var(--notification);
+        width: auto;
+        height: 16px;
+        padding: 0 4px;
+        position: absolute;
+        bottom: -4px;
+        right: -4px;
+        border-radius: 12px;
+        border: 4px solid var(--quaternary);
+        text-align: right;
+        font-size: 13px;
+        font-weight: bold;
+        color: var(--white);
+        content: '${props.mentions && props.mentions}';
+        display: ${props.mentions && props.mentions > 0 ? 'inline' : 'none'};
+      `: ''
+    }
   }
   transition: border-radius .2s, background-color .2s;
-  &.active, &:hover {
+  &.active, &:hover{
     border-radius: 16px;
     background-color: ${(props) => props.isHome ? 'var(--tutiPrimary)' : 'var(--discord)'};
+  }
 `;
