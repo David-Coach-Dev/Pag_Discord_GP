@@ -34,11 +34,11 @@ export const ButtonSB = styled.button<Props>`
       `
         background-color: var(--live);
         width: auto;
-        height: 16px;
-        padding: 0 4px;
+        height: 14px;
+        padding: 2px;
         position: absolute;
         top: -6px;
-        right: -14px;
+        right:  -14px;
         border-radius: 12px;
         border: 4px solid var(--quaternary);
         text-align: right;
