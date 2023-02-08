@@ -29,7 +29,7 @@ export default createGlobalStyle`
     
     --live: #43b581;
     --notification: #f84a4b;
-    --notificationDc: #dc274345;
+    --notificationDc: #dc274350;
     --discord: #6e86d6;
     --mention-detail: #f9a839;
     --mention-message: #413f3f;
