@@ -40,6 +40,3 @@ export default createGlobalStyle`
     --tutiSecondary:  #EA1889;
   }
 `;
-
-// primary:  #000000
-// secondary:  #EA1889
