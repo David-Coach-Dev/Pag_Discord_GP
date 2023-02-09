@@ -31,7 +31,7 @@ export const IconsData = [
     Key:"2",
     name: 'Twitch',
     icon: TwiTuti,
-    link: 'https://www.twitch.tv/gentlemanprogramming',
+    link: 'https://www.twitch.tv/gentleman_programming',
   },
   {
     Key:"3",
