@@ -1,14 +1,14 @@
-import LogoTuti from "@/discordPage/assets/img/tuti.gif";
-import DevilTuti from "@/discordPage/assets/img/DevilTuti.webp";
+import LogoTuti from "@/discordPage/assets/img/LogoTuti.gif";
+import WikiTuti from "@/discordPage/assets/img/WikiTuti.webp";
 import DiscTuti from "@/discordPage/assets/img/DiscTuti.webp";
-import DonTuti from "@/discordPage/assets/img/DonTuti.webp";
-import SuperTuti from "@/discordPage/assets/img/SuperTuti.webp";
+import FaceTuti from "@/discordPage/assets/img/FaceTuti.webp";
+import SpoTuti from "@/discordPage/assets/img/SpoTuti.webp";
 import TwiTuti from "@/discordPage/assets/img/TwiTuti.webp";
 import YouTuti from "@/discordPage/assets/img/YouTuti.webp";
 import InsTuti from "@/discordPage/assets/img/InsTuti.webp";
-import LibTuti from "@/discordPage/assets/img/LibTuti.webp";
+import AmTuti from "@/discordPage/assets/img/AmTuti.webp";
 import TwitTuti from "@/discordPage/assets/img/TwitTuti.webp";
-import Tuti from "@/discordPage/assets/img/Tuti.webp";
+import GooTuti from "@/discordPage/assets/img/GooTuti.webp";
 import TutiPink from "@/discordPage/assets/img/TutiPink.webp";
 import TutiRed from "@/discordPage/assets/img/TutiRed.webp";
 import TutiGreen from "@/discordPage/assets/img/TutiGreen.webp";
@@ -42,13 +42,13 @@ export const IconsData = [
   {
     Key:"4",
     name: 'Spotify',
-    icon: SuperTuti,
+    icon: SpoTuti,
     link: ' https://spoti.fi/3y281cY'
   },
   {
     key: "5",
     name: 'Facebook',
-    icon: DonTuti,
+    icon: FaceTuti,
     link: 'https://www.facebook.com/gentleman.programming',
   },
   {
@@ -66,19 +66,19 @@ export const IconsData = [
   {
     key: "8",
     name: 'Libro amazon',
-    icon: LibTuti,
+    icon: AmTuti,
     link: 'https://amzn.to/2ReBuzL',
   },
   {
     key: "9",
     name: 'gentleman Wiki',
-    icon: DevilTuti,
+    icon: WikiTuti,
     link: 'https://bit.ly/gentleman-wiki',
   },
   {
     key: "10",
     name: 'Interview',
-    icon: Tuti,
+    icon: GooTuti,
     link: 'https://docs.google.com/spreadsheets/d/1kd8ipybKZrPb7ubLLoHDJvLugLzDhnejuH24wZVWuDM/edit?usp=sharing',
   },
 ]
