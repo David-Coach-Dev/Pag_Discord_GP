@@ -1,5 +1,5 @@
-import { FC, useEffect, useState } from 'react';
-import { ContainerUl, RoleUL, UserUL, AvatarUL, userDiscord } from "@/DiscordPage";
+import { AvatarUL, ContainerUl, RoleUL, userDiscord, UserUL } from "@/DiscordPage";
+import { FC } from 'react';
 
 
 interface UseProps{
@@ -13,7 +13,7 @@ const UserRowUL: FC<UseProps> = ({id, avatar, nicknameUL, isBot}) =>{
 	return (
     <UserUL key={id}>
       <AvatarUL className={isBot ? "bot" : ""}>
-        <img src={avatar} />
+        <img src={avatar} alt={nicknameUL}/>
       </AvatarUL>
       <strong>{nicknameUL}</strong>
       {isBot && <span>Bot</span>}
