@@ -1,6 +1,6 @@
 import { ButtonSB } from "@/DiscordPage";
 import { FC } from "react";
-export interface Props {
+export interface PropsSB {
   key?: string;
   selected?: boolean;
   isHome?: boolean;
@@ -11,7 +11,7 @@ export interface Props {
   description?: string;
   link?: string;
 }
-export const ServerButton: FC<Props> = ({
+export const ServerButton: FC<PropsSB> = ({
   selected,
   key,
   isHome,

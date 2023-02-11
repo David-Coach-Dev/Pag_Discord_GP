@@ -1,6 +1,7 @@
 import { ContainerSN, TitleSN, ExpandIconSN } from "@/DiscordPage";
+import { FC } from "react";
 
-export default function ServerName() {
+export const ServerName: FC = () => {
   return (
     <ContainerSN>
       <TitleSN>Gentleman Programing</TitleSN>
