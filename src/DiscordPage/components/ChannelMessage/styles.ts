@@ -1,58 +1,67 @@
 import styled from 'styled-components';
-import { AlternateEmail } from 'styled-icons/material';
-export const ContainerCD = styled.div`
-  grid-area: CD;
+export const ContainerCM = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 4px 16px;
+  margin-right: 4px;
+  background-color: transparent;
+  &.mentionCM {
+    background-color: var(--mention-message);
+    border-left: 2px solid var(--mention-detail);
+    padding-left: 14px;
+  }
+  & + div {
+    margin-top: 13px;
+  }
+`;
+export const AvatarCM = styled.div`
+  width: 40px;
+  height: 40px;
+  background-color: var(--secondary);
+  border-radius: 50%;
+  &.bot {
+    background-color: var(--mention-detail);
+  }
+`;
+export const MessageCM = styled.div`
+  min-height: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: var(--primary);
-
+  margin-left: 17px;
 `;
-export const MessageCD = styled.div`
-  padding: 20px 0;
+export const HeaderCM = styled.div`
   display: flex;
-  flex-direction: column;
-  max-height: calc(100vh - 46px - 68px);
-  overflow-y: scroll;
-
-  ::-webkit-scrollbar{
-    width:8px;
+  align-items: center;
+  > strong {
+    color: var(--white);
+    font-size: 16px;
   }
-  ::-webkit-scrollbar-thumb{
-    background-color:var(--tertiary);
-    border-radius:4px;
+  > span {
+    margin-left: 6px;
+    background-color: var(--discord);
+    color: var(--white);
+    border-radius: 4px;
+    padding: 4px 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 11px;
   }
-  ::-webkit-scrollbar-track{
-    background-color:var(--secondary);
-  }
-
-`;
-export const InputWrapperCD = styled.div`
-  width: 100%;
-  padding: 0 16px;
-`;
-export const InputCD = styled.input`
-  width: 100%;
-  height: 44px;
-  padding: 0 10px 0 57px;
-  border-radius: 7px;
-  color: var(--white);
-  background-color: var(--chat-input);
-  position: relative;
-  &::placeholder{
+  > time {
+    margin-left: 6px;
     color: var(--gray);
-  }
-  ~ svg{
-    position: relative;
-    top: -50%;
-    left: 14px;
-    transition: 180ms ease-in-out;
-
-
+    font-size: 13px;
   }
 `;
-export const InputIconCD = styled(AlternateEmail)`
-  width: 24px;
-  height: 24px;
-  color: var(--gray);
+export const ContentCM = styled.div`
+  text-align: left;
+  font-size: 16px;
+  color: var(--white);
+`;
+export const MentionCM = styled.span`
+  color: var(--link);
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
 `;

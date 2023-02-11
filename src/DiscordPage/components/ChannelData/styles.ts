@@ -12,7 +12,7 @@ export const MessageCD = styled.div`
   padding: 20px 0;
   display: flex;
   flex-direction: column;
-  max-height: calc(100vh - 46px - 68px);
+  max-height: calc(100vh - 48px - 68px);
   overflow-y: scroll;
 
   ::-webkit-scrollbar{
