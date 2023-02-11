@@ -6,21 +6,48 @@ export interface PorpsUL {}
 		isBot?: boolean;
 	};
 const UserRowUL: FC<UseProps> = ({nicknameUL, isBot=false}) =>{
+	return (
 	<UserUL>
-		<AvatarUL />
+		<AvatarUL className={isBot ? 'bot':''}/>
 		<strong>
 			{nicknameUL}
 		</strong>
 		{isBot && <span>Bot</span>}
 	</UserUL>
+	);
 }
 export const UserList :FC<PorpsUL> = () => {
 	return (
 		<ContainerUl>
-			<RoleUL>Disponivel - 1</RoleUL>
+			<RoleUL>Disponible - 1</RoleUL>
 			<UserRowUL nicknameUL="Dc Dev" />
 			<RoleUL>Offline - 1</RoleUL>
 			<UserRowUL nicknameUL="Dc Dev bot" isBot/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
+			<UserRowUL nicknameUL="Dc Dev bot"/>
 		</ContainerUl>
 	);
 };

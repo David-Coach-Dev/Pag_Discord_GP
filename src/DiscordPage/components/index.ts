@@ -1,5 +1,6 @@
 export * from './ChanelInfo';
 export * from './ChannelButton';
+export * from './ChannelData';
 export * from './ChannelList';
 export * from './Layout';
 export * from './ServerButton';
