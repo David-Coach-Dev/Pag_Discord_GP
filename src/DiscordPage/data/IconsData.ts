@@ -16,67 +16,67 @@ import TutiYellow from "@/discordPage/assets/img/TutiYellow.webp";
 
 export const IconsData = [
   {
-    key: "0",
+    id: "0",
     name: 'LogoTuti',
     icon:  LogoTuti ,
     link: 'https://discord.gg/KEavKkDc5Y',
   },
   {
-    key: "1",
+    id: "1",
     name: 'Discord',
     icon:  DiscTuti ,
     link: 'https://discord.gg/KEavKkDc5Y',
   },
   {
-    Key:"2",
+    id:"2",
     name: 'Twitch',
     icon: TwiTuti,
     link: 'https://www.twitch.tv/gentleman_programming',
   },
   {
-    Key:"3",
+    id:"3",
     name: 'YouTube',
     icon: YouTuti,
     link: 'https://www.youtube.com/c/GentlemanProgramming',
   },
   {
-    Key:"4",
+    id:"4",
     name: 'Spotify',
     icon: SpoTuti,
     link: ' https://spoti.fi/3y281cY'
   },
   {
-    key: "5",
+    id: "5",
     name: 'Facebook',
     icon: FaceTuti,
     link: 'https://www.facebook.com/gentleman.programming',
   },
   {
-    key: "6",
+    id: "6",
     name: 'Instagram',
     icon: InsTuti,
     link: 'https://www.instagram.com/gentlemanprogramming/',
   },
   {
-    key: "7",
+    id: "7",
     name: 'Twitter',
     icon: TwitTuti,
     link: 'https://twitter.com/G_Programming',
   },
   {
-    key: "8",
+    id: "8",
     name: 'Libro amazon',
     icon: AmTuti,
     link: 'https://amzn.to/2ReBuzL',
   },
   {
-    key: "9",
+    id: "9",
     name: 'gentleman Wiki',
     icon: WikiTuti,
     link: 'https://bit.ly/gentleman-wiki',
   },
   {
-    key: "10",
+    id: "10",
     name: 'Interview',
     icon: GooTuti,
     link: 'https://docs.google.com/spreadsheets/d/1kd8ipybKZrPb7ubLLoHDJvLugLzDhnejuH24wZVWuDM/edit?usp=sharing',

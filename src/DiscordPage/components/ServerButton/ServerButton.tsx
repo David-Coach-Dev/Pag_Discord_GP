@@ -1,7 +1,7 @@
 import { ButtonSB } from "@/DiscordPage";
 import { FC } from "react";
 export interface PropsSB {
-  key?: string;
+  id?: string;
   selected?: boolean;
   isHome?: boolean;
   hasNotifications?: boolean;
@@ -13,7 +13,7 @@ export interface PropsSB {
 }
 export const ServerButton: FC<PropsSB> = ({
   selected,
-  key,
+  id,
   isHome,
   hasNotifications,
   isLive,
@@ -24,7 +24,7 @@ export const ServerButton: FC<PropsSB> = ({
 }) => {
   return (
     <ButtonSB
-      key={key}
+      id={id}
       isHome={isHome}
       hasNotifications={hasNotifications}
       isLive={isLive}
@@ -32,7 +32,6 @@ export const ServerButton: FC<PropsSB> = ({
       className={selected ? "active" : ""}
       onClick={() => {
         if (link) {
-          //window.location.href = `${link}`;
           window.open(link, "_blank");
         }
       }}

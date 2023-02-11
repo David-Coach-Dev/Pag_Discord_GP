@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { Props } from '.';
+import { PropsSB } from '.';
 
-export const ButtonSB = styled.button<Props>`
+export const ButtonSB = styled.button<PropsSB>`
   display: flex;
   align-items: center;
   justify-content: center;
