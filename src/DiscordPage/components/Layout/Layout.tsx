@@ -1,5 +1,14 @@
 import { FC } from "react";
-import { Grid, ServerList, ServerName, ChanelInfo, ChannelList, UserInfo, UserList } from "@/DiscordPage";
+import {
+  Grid,
+  ServerList,
+  ServerName,
+  ChanelInfo,
+  ChannelList,
+  UserInfo,
+  UserList,
+  ChannelData,
+} from "@/DiscordPage";
 
 export const Layout: FC = () => {
   return (
@@ -9,6 +18,7 @@ export const Layout: FC = () => {
       <ChanelInfo />
       <ChannelList />
       <UserInfo />
+      <ChannelData />
       <UserList />
     </Grid>
   );

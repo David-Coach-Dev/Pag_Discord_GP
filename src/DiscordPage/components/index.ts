@@ -2,6 +2,7 @@ export * from './ChanelInfo';
 export * from './ChannelButton';
 export * from './ChannelData';
 export * from './ChannelList';
+export * from './ChannelMessage';
 export * from './Layout';
 export * from './ServerButton';
 export * from './ServerList';

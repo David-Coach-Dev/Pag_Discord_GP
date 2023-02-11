@@ -37,7 +37,7 @@ export const UserUL = styled.div`
   border-radius: 4px;
   background: transparent;
   transition: background-color 0.2s;
-  $:hover {
+  &:hover {
     background: rgba(255, 255, 255, 0.1);
   }
   > strong {

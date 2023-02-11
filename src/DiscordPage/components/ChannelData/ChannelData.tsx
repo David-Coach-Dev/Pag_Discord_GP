@@ -13,7 +13,7 @@ export const ChannelData : FC<PorpsCD> = () => {
 		<ContainerCD>
 			<MessageCD />
 			<InputWrapperCD>
-				<InputCD />
+				<InputCD type='text' placeholder='Conversar en #Channel-live '/>
 				<InputIconCD />
 			</InputWrapperCD>
 		</ContainerCD>
