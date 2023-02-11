@@ -67,7 +67,15 @@ export const AvatarUL = styled.div`
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: var(--primary);
+  background-color: var(--white);
+  > img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
   &.bot{
     background-color: var(--mention-detail);
   }
