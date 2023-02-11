@@ -1,18 +1,18 @@
-import LogoTuti from "@/discordPage/assets/img/LogoTuti.gif";
-import WikiTuti from "@/discordPage/assets/img/WikiTuti.webp";
-import DiscTuti from "@/discordPage/assets/img/DiscTuti.webp";
-import FaceTuti from "@/discordPage/assets/img/FaceTuti.webp";
-import SpoTuti from "@/discordPage/assets/img/SpoTuti.webp";
-import TwiTuti from "@/discordPage/assets/img/TwiTuti.webp";
-import YouTuti from "@/discordPage/assets/img/YouTuti.webp";
-import InsTuti from "@/discordPage/assets/img/InsTuti.webp";
-import AmTuti from "@/discordPage/assets/img/AmTuti.webp";
-import TwitTuti from "@/discordPage/assets/img/TwitTuti.webp";
-import GooTuti from "@/discordPage/assets/img/GooTuti.webp";
-import TutiPink from "@/discordPage/assets/img/TutiPink.webp";
-import TutiRed from "@/discordPage/assets/img/TutiRed.webp";
-import TutiGreen from "@/discordPage/assets/img/TutiGreen.webp";
-import TutiYellow from "@/discordPage/assets/img/TutiYellow.webp";
+import LogoTuti from "../../assets/img/LogoTuti.gif";
+import WikiTuti from "../../assets/img/WikiTuti.webp";
+import DiscTuti from "../../assets/img/DiscTuti.webp";
+import FaceTuti from "../../assets/img/FaceTuti.webp";
+import SpoTuti from "../../assets/img/SpoTuti.webp";
+import TwiTuti from "../../assets/img/TwiTuti.webp";
+import YouTuti from "../../assets/img/YouTuti.webp";
+import InsTuti from "../../assets/img/InsTuti.webp";
+import AmTuti from "../../assets/img/AmTuti.webp";
+import TwitTuti from "../../assets/img/TwitTuti.webp";
+import GooTuti from "../../assets/img/GooTuti.webp";
+import TutiPink from "../../assets/img/TutiPink.webp";
+import TutiRed from "../../assets/img/TutiRed.webp";
+import TutiGreen from "../../assets/img/TutiGreen.webp";
+import TutiYellow from "../../assets/img/TutiYellow.webp";
 
 export const IconsData = [
   {
