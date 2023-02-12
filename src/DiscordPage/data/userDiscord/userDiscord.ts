@@ -5,7 +5,7 @@ export const userDiscord = [
   {
     id:"0",
     avatar: user,
-    nickName: "server",
+    nickName: "Cj Corp",
     number: "0000",
     online: true,
     isBot: false,
