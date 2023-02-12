@@ -30,7 +30,7 @@ export const ChannelData : FC<PorpsCD> = () => {
 					/>
 				))}
 				<ChannelMessage
-					author='Dc Dev'
+					author='Cj Corp'
 					date="02/10/2023"
 					content=' hi'
 				/>

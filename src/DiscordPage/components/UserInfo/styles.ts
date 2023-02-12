@@ -21,7 +21,15 @@ export const AvatarUI = styled.div`
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: var(--gray);
+  background-color: var(--While);
+   > img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
 `;
 export const UserDataUI = styled.div`
   margin-left: 8px;
