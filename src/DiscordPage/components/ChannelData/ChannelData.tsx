@@ -19,37 +19,33 @@ export const ChannelData : FC<PorpsCD> = () => {
 		}
 	},[messageRef])
 	return (
-		<ContainerCD>
-			<MessageCD ref={messageRef}>
-				{ Array.from(Array(15).keys()).map((n) => (
-					<ChannelMessage
-						key={n}
-						author='Dc Dev'
-						date="02/10/2023"
-						content=' hi'
-					/>
-				))}
-				<ChannelMessage
-					author='Cj Corp'
-					date="02/10/2023"
-					content=' hi'
-				/>
-				<ChannelMessage
-					author='Dc Dev Bot'
-					date="02/10/2023"
-					isBot
-					hasMention
-					content={
-						<>
-							<MentionCM>@DcDevBot</MentionCM>,  hi soy un Bot
-						</>
-					}
-				/>
-			</MessageCD>
-			<InputWrapperCD>
-				<InputCD type='text' placeholder='Conversar en #Channel-live '/>
-				<InputIconCD />
-			</InputWrapperCD>
-		</ContainerCD>
-	);
+    <ContainerCD>
+      <MessageCD ref={messageRef}>
+        {Array.from(Array(15).keys()).map((n) => (
+          <ChannelMessage
+            key={n}
+            author="Dc Dev"
+            date="02/10/2023"
+            content="hi all"
+          />
+        ))}
+        <ChannelMessage author="Cj Corp" date="02/10/2023" content=" hi" />
+        <ChannelMessage
+          author="Dc Dev Bot"
+          date="02/10/2023"
+          isBot
+          hasMention
+          content={
+            <>
+              <MentionCM>@DcDevBot</MentionCM>, hi soy un Bot
+            </>
+          }
+        />
+      </MessageCD>
+      <InputWrapperCD>
+        <InputCD type="text" placeholder="Conversar en #Channel-live " />
+        <InputIconCD />
+      </InputWrapperCD>
+    </ContainerCD>
+  );
 };
