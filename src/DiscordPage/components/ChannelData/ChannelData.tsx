@@ -24,9 +24,9 @@ export const ChannelData : FC<PorpsCD> = () => {
         {Array.from(Array(15).keys()).map((n) => (
           <ChannelMessage
             key={n}
-            author="Dc Dev"
+            author={`Dc Dev ${n + 1}`}
             date="02/10/2023"
-            content="hi all"
+            content={`${n + 1}.- Hi all`}
           />
         ))}
         <ChannelMessage author="Cj Corp" date="02/10/2023" content=" hi" />
