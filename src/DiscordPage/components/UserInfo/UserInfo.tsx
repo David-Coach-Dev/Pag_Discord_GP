@@ -9,8 +9,8 @@ export const UserInfo : FC<PropsUI> = () => {
 		<ProfileUI>
 			<AvatarUI />
 			<UserDataUI>
-				<strong>John Doe</strong>
-				<span>#12345</span>
+				<strong>Dc Dev</strong>
+				<span>#3536</span>
 			</UserDataUI>
 		</ProfileUI>
 		<IconsUI>
