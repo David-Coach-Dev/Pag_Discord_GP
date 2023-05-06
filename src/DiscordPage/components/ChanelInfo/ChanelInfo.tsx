@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import {
   ContainerCI,
-  HashtagIconCI,
+  HashtagIconCI, 
   TitleCI,
   SeparadorCI,
   DescriptionCI,
